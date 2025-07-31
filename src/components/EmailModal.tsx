@@ -82,7 +82,7 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
   };
 
   // Function to draw a realistic check
-  const drawCheck = (pdf: any, x: number, y: number) => {
+  const drawCheck = (pdf: import('jspdf').jsPDF, x: number, y: number) => {
     const checkWidth = 250;
     const checkHeight = 80;
 
