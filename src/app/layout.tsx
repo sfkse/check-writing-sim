@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navigation from "@/components/Navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     "Learn how to write a check properly with our step-by-step guide and interactive simulator. Practice filling out checks, export PDFs, and master this essential financial skill.",
   keywords:
     "how to write a check, check writing guide, check simulator, fill out check, check tutorial, banking skills, financial literacy",
-  authors: [{ name: "Check Writing Assistant" }],
+  authors: [{ name: "Financial Education Team" }],
   creator: "Check Writing Assistant",
   publisher: "Check Writing Assistant",
   robots: "index, follow",
@@ -27,19 +28,45 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://checkwritingassistant.com",
+    siteName: "Check Writing Assistant",
     title: "How to Write a Check - Interactive Guide & Simulator",
     description:
-      "Master check writing with our comprehensive guide and interactive simulator. Practice safely and learn proper techniques.",
-    siteName: "Check Writing Assistant",
+      "Learn how to write a check properly with our step-by-step guide and interactive simulator. Practice filling out checks, export PDFs, and master this essential financial skill.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Check Writing Assistant - Learn to Write Checks",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "How to Write a Check - Interactive Guide & Simulator",
     description:
-      "Learn to write checks properly with our interactive simulator and comprehensive guide.",
+      "Learn how to write a check properly with our step-by-step guide and interactive simulator.",
+    images: ["/og-image.jpg"],
   },
   viewport: "width=device-width, initial-scale=1",
-  themeColor: "#2563eb",
+  themeColor: "#3B82F6",
+  other: {
+    "application-ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      name: "Check Writing Assistant",
+      description:
+        "Interactive check writing simulator and comprehensive guide for learning proper check writing techniques.",
+      url: "https://checkwritingassistant.com",
+      applicationCategory: "FinanceApplication",
+      operatingSystem: "Web Browser",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
+    }),
+  },
 };
 
 export default function RootLayout({
@@ -49,43 +76,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="canonical" href="https://checkwritingassistant.com" />
-        <meta
-          name="google-site-verification"
-          content="your-verification-code"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebApplication",
-              name: "Check Writing Assistant",
-              description:
-                "Interactive tool to learn how to write checks properly with step-by-step guidance and practice simulator.",
-              url: "https://checkwritingassistant.com",
-              applicationCategory: "EducationalApplication",
-              operatingSystem: "Web Browser",
-              offers: {
-                "@type": "Offer",
-                price: "0",
-                priceCurrency: "USD",
-              },
-              featureList: [
-                "Interactive check writing simulator",
-                "Step-by-step writing guide",
-                "PDF export functionality",
-                "Sample check templates",
-                "Comprehensive FAQ",
-              ],
-            }),
-          }}
-        />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navigation />
         {children}
       </body>
     </html>

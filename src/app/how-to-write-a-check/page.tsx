@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import ContactWidget from "@/components/ContactWidget";
 
 export const metadata: Metadata = {
   title:
@@ -11,44 +12,42 @@ export const metadata: Metadata = {
     "how to write a check, check writing guide, check tutorial, banking skills, financial literacy, check writing steps",
 };
 
-export default function BlogPage() {
+export default function HowToWriteACheckPage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-4 transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Simulator
-          </Link>
-
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            How to Write a Check: A Step-by-Step Guide for Beginners
-          </h1>
-
-          <div className="flex items-center gap-6 text-sm text-gray-600">
-            <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4" />
-              <span>Updated July 2025</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4" />
-              <span>10 min read</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <User className="w-4 h-4" />
-              <span>Financial Education Team</span>
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Content */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
+          {/* Header */}
+          <header className="mb-12">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-6 transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Simulator
+            </Link>
+
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              How to Write a Check: A Step-by-Step Guide for Beginners
+            </h1>
+
+            <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600 pb-6 border-b border-gray-200">
+              <div className="flex items-center gap-2">
+                <Calendar className="w-4 h-4" />
+                <span>Updated July 2025</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock className="w-4 h-4" />
+                <span>10 min read</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <User className="w-4 h-4" />
+                <span>Financial Education Team</span>
+              </div>
+            </div>
+          </header>
+
           {/* Introduction */}
           <div className="prose prose-lg max-w-none mb-12">
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
@@ -473,6 +472,11 @@ export default function BlogPage() {
                 </div>
               </div>
             </div>
+          </section>
+
+          {/* Contact Widget */}
+          <section className="mb-16">
+            <ContactWidget />
           </section>
 
           {/* Call to Action */}

@@ -2,6 +2,7 @@ import CheckSimulator from "@/components/CheckSimulator";
 import WrittenGuide from "@/components/WrittenGuide";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import ContactWidget from "@/components/ContactWidget";
 import Link from "next/link";
 import { BookOpen, ArrowRight } from "lucide-react";
 
@@ -24,7 +25,7 @@ export default function Home() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Check Simulator */}
-        <section className="mb-16">
+        <section id="simulator" className="mb-16">
           <CheckSimulator />
         </section>
 
@@ -73,8 +74,13 @@ export default function Home() {
         </section>
 
         {/* FAQ */}
-        <section className="mb-16">
+        <section id="faq" className="mb-16">
           <FAQ />
+        </section>
+
+        {/* Contact Widget */}
+        <section className="mb-16">
+          <ContactWidget />
         </section>
       </div>
 
