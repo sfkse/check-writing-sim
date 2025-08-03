@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,14 +22,14 @@ export const metadata: Metadata = {
   keywords:
     "how to write a check, check writing guide, check simulator, fill out check, check tutorial, banking skills, financial literacy",
   authors: [{ name: "Financial Education Team" }],
-  creator: "Check Writing Assistant",
-  publisher: "Check Writing Assistant",
+  creator: "Check Writing Simulator",
+  publisher: "Check Writing Simulator",
   robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://checkwritingassistant.com",
-    siteName: "Check Writing Assistant",
+    siteName: "Check Writing Simulator",
     title: "How to Write a Check - Interactive Guide & Simulator",
     description:
       "Learn how to write a check properly with our step-by-step guide and interactive simulator. Practice filling out checks, export PDFs, and master this essential financial skill.",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Check Writing Assistant - Learn to Write Checks",
+        alt: "Check Writing Simulator - Learn to Write Checks",
       },
     ],
   },
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     "application-ld+json": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      name: "Check Writing Assistant",
+      name: "Check Writing Simulator",
       description:
         "Interactive check writing simulator and comprehensive guide for learning proper check writing techniques.",
       url: "https://checkwritingassistant.com",
@@ -81,6 +82,7 @@ export default function RootLayout({
       >
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

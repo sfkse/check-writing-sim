@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, CreditCard, BookOpen, HelpCircle, Home } from "lucide-react";
 
 export default function Navigation() {
@@ -21,9 +22,15 @@ export default function Navigation() {
           {/* Logo/Brand */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-2">
-              <CreditCard className="w-8 h-8 text-blue-600" />
+              {/* <CreditCard className="w-8 h-8 text-blue-600" /> */}
+              <Image
+                src="/logo.png"
+                alt="Check Writing Simulator"
+                width={80}
+                height={100}
+              />
               <span className="text-xl font-bold text-gray-900 hidden sm:block">
-                Check Writing Assistant
+                Check Writing Simulator
               </span>
               <span className="text-xl font-bold text-gray-900 sm:hidden">
                 Check Writer

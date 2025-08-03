@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import CheckPreview from "./CheckPreview";
-import ExportButtons from "./ExportButtons";
+import CheckPreview from "@/components/CheckPreview";
+import ExportButtons from "@/components/ExportButtons";
 import { CheckData } from "@/types/check";
 
 export default function CheckSimulator() {

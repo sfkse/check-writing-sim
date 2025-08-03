@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <CreditCard className="w-8 h-8 text-blue-400" />
-              <span className="text-xl font-bold">Check Writing Assistant</span>
+              <span className="text-xl font-bold">Check Writing Simulator</span>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-4">
               Learn to write checks properly with our interactive simulator and
@@ -140,7 +140,7 @@ export default function Footer() {
           {/* Copyright and Final Links */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="text-sm text-gray-400">
-              &copy; 2025 Check Writing Assistant. All rights reserved.
+              &copy; 2025 Check Writing Simulator. All rights reserved.
             </div>
 
             <div className="flex items-center gap-6 text-sm text-gray-400">

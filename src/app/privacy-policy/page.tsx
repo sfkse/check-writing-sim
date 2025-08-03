@@ -3,10 +3,10 @@ import Link from "next/link";
 import { ArrowLeft, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Check Writing Assistant",
+  title: "Privacy Policy - Check Writing Simulator",
   description:
-    "Learn about how Check Writing Assistant protects your privacy and handles data.",
-  keywords: "privacy policy, data protection, privacy, check writing assistant",
+    "Learn about how Check Writing Simulator protects your privacy and handles data.",
+  keywords: "privacy policy, data protection, privacy, check writing simulator",
 };
 
 export default function PrivacyPolicyPage() {
@@ -40,7 +40,7 @@ export default function PrivacyPolicyPage() {
                 Your Privacy Matters
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Check Writing Assistant is committed to protecting your privacy.
+                Check Writing Simulator is committed to protecting your privacy.
                 This Privacy Policy explains how we collect, use, and safeguard
                 your information when you use our educational platform.
               </p>

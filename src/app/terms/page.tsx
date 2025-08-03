@@ -3,10 +3,10 @@ import Link from "next/link";
 import { ArrowLeft, FileText } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - Check Writing Assistant",
+  title: "Terms of Service - Check Writing Simulator",
   description:
-    "Read our Terms of Service for using the Check Writing Assistant educational platform.",
-  keywords: "terms of service, terms, conditions, check writing assistant",
+    "Read our Terms of Service for using the Check Writing Simulator educational platform.",
+  keywords: "terms of service, terms, conditions, check writing simulator",
 };
 
 export default function TermsPage() {
@@ -37,10 +37,10 @@ export default function TermsPage() {
           <div className="prose prose-lg max-w-none">
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                Welcome to Check Writing Assistant
+                Welcome to Check Writing Simulator
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                By using Check Writing Assistant, you agree to these Terms of
+                By using Check Writing Simulator, you agree to these Terms of
                 Service. Please read them carefully before using our educational
                 platform.
               </p>
@@ -58,7 +58,7 @@ export default function TermsPage() {
                 Educational Use Only
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Check Writing Assistant is an educational tool designed to teach
+                Check Writing Simulator is an educational tool designed to teach
                 proper check writing techniques. By using our service, you
                 acknowledge that:
               </p>
@@ -97,7 +97,7 @@ export default function TermsPage() {
               </h2>
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded mb-4">
                 <p className="text-yellow-800">
-                  <strong>Important:</strong> Check Writing Assistant is
+                  <strong>Important:</strong> Check Writing Simulator is
                   provided "as is" without warranties of any kind.
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function TermsPage() {
                 Limitation of Liability
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Check Writing Assistant and its operators shall not be liable
+                Check Writing Simulator and its operators shall not be liable
                 for:
               </p>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">
@@ -138,14 +138,14 @@ export default function TermsPage() {
                 Intellectual Property
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                All content on Check Writing Assistant, including but not
+                All content on Check Writing Simulator, including but not
                 limited to:
               </p>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">
                 <li>Text, graphics, and design elements</li>
                 <li>Software code and functionality</li>
                 <li>Educational materials and guides</li>
-                <li>The Check Writing Assistant name and branding</li>
+                <li>The Check Writing Simulator name and branding</li>
               </ul>
               <p className="text-gray-700 leading-relaxed">
                 All content is protected by copyright and other intellectual
